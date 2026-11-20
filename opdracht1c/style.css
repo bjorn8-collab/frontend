@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--row-gap: 10px;
+	--column-gap: 10px;
+	--column-padding: 10px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	gap: var(--row-gap);
+	border: 3px solid rgb(0, 140, 255);
+}
+
+.row {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: var(--column-gap);
+}
+
+[class^="col-"] {
+	padding: var(--column-padding);
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	align-items: center;
+	border: 1px solid #000;
+}
+
+ .col-1 {
+    flex-basis: 8.33%;
+  }
+
+  .col-2 {
+    flex-basis: 16.67%;
+
+}
+
+.col-3 {
+    flex-basis: 25%;
+
+}
+
+.col-4 {
+    flex-basis: 33.33%;
+}
+
+.col-5 {
+    flex-basis: 41.66% ;
+}
+
+.col-6 {
+    flex-basis: 50%;
+}
+
+.col-7 {
+    flex-basis: 58.33%;
+}
+
+.col-8 {
+    flex-basis: 66.66%;
+}
+
+.col-9 {
+    flex-basis: 75%;
+}
+
+.col-10 {
+    flex-basis: 83.33%;
+}
+
+.col-11 {
+
+    flex-basis: 91.66%;
+
+}
+  
+  .col-12 {
+    flex-basis: 100%;
+  }
+  
+ 
+  .midden {
+    flex-grow: 1;
+}
+
+.midden > nav,
+.midden > main {
+    display: block;
+}
+
+.midden nav a {
+    display: block;
+}
+
+.midden section {
+    padding: 32px 0;
+}
+
+.midden section + section {
+    border-top: 1px solid #777;
+}
+
+body {
+    background-color: #e9f3f8;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 10px;
+    border: none;
+}
+
+[class^="col-"] {
+    min-width: 0;
+    padding: 12px;
+    background-color: white;
+    border: 3px solid #cbd5e1;
+    border-radius: 15px;
+}
+
+.container > .row:first-child > .col-6 {
+    justify-content: center;
+    background-color: #1e208a;
+    color: white;
+    font-weight: bolder;
+}
+
+.midden nav a {
+    padding: 3px 8px;
+    color: #1d4ed8;
+    border-radius: 6px;
+}
+
+.midden nav a:hover,
+.midden nav a:focus-visible {
+    background-color: #dbeafe;
+}
+
+.midden section {
+    padding: 20px 1;
+}
+
+.midden h2 {
+    margin-bottom: 40px;
+}
