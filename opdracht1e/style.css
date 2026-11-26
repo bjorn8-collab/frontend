@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+    border: 3px solid magenta;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    gap: 8px;
+}
+
+[class^="col-"] {
+    flex: 1;
+    min-width: 0;
+    padding: 8px;
+    border: 1px solid #000;
+}
+
+@media (max-width: 576px) {
+    .container {
+        border: 5px solid red;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
