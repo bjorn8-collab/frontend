@@ -1,0 +1,26 @@
+c* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    min-height: 100vh;
+    margin: 0 auto;
+    border: 3px solid rgb(0, 140, 255);
+}
+
+.row {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.col-2 {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #000;
+}
